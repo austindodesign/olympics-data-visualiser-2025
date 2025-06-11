@@ -1,13 +1,10 @@
 // Circle.js — draws all country bubbles and axes
 
 function drawAllCountryCircles() {
-
-
-  
   const maxDataX = getMaxValueForYearSeason(selectedX, currentYearSeason);
   const maxDataY = getMaxValueForYearSeason(selectedY, currentYearSeason);
-  const marginX = maxDataX * CHART_MARGIN_RATIO;
-  const marginY = maxDataY * CHART_MARGIN_RATIO + 10;
+  const marginX = maxDataX * CHART_MARGIN_RATIO + 20;
+  const marginY = maxDataY * CHART_MARGIN_RATIO + 20;
 
   // Map raw data values to screen positions
   for (let key in countryMap) {

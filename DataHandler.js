@@ -88,12 +88,11 @@ function loadOlympicParticipation() {
 }
 
 function loadOlympicsData() {
-  if (!olympicsTable) {
-    console.warn("olympicsTable is not loaded");
-    return;
-  }
+  if (!olympicsTablePart1 || !olympicsTablePart2) return;
 
-  for (let row of olympicsTable.rows) {
+  let combinedRows = [...olympicsTablePart1.rows, ...olympicsTablePart2.rows];
+
+  for (let row of combinedRows) {
     const noc = row.getString("NOC");
     const cd = countryMap[noc];
     if (!cd) continue;
@@ -104,10 +103,7 @@ function loadOlympicsData() {
     if (!year || !season) continue;
 
     const ys = new YearSeason(year, season);
-
-    if (medal && medal !== "") {
-      cd.addMedal(ys, medal);
-    }
+    if (medal && medal !== "") cd.addMedal(ys, medal);
 
     const a = new Athlete(
       row.getString("Name"),
@@ -127,6 +123,7 @@ function loadOlympicsData() {
     countryMap[key].computeYearSeasonAggregates();
   }
 }
+
 
 function buildYearSeasonList() {
   let set = new Set();

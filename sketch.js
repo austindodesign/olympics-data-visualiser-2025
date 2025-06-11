@@ -84,7 +84,8 @@ let currentOffset, targetOffset;
 let aliasTable;
 let statsTable;
 let popTable;
-let olympicsTable;
+let olympicsTablePart1, olympicsTablePart2;
+
 
 
 function preload() {
@@ -103,7 +104,9 @@ function preload() {
   aliasTable = loadTable("sources/country_code_alias.csv", "header");
   statsTable = loadTable("sources/country_stats_2023.csv", "header");
   popTable = loadTable("sources/worldpop.csv", "header");
-  olympicsTable = loadTable("sources/olympic.csv", "header");
+  olympicsTablePart1 = loadTable("sources/olympic_1952-1984.csv", "header");
+olympicsTablePart2 = loadTable("sources/olympic_1985-2016.csv", "header");
+
 }
 
 

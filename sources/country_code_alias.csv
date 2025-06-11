@@ -1,0 +1,257 @@
+NOC,olympic_team,country_name,other_allias,historic_name,region,start_year,end_year
+AFG,Afghanistan,Afghanistan,,,Asia,1956,2016
+ALB,Albania,Albania,,,Europe,1972,2016
+ALG,Algeria,Algeria,,,Africa,1964,2016
+ASA,American Samoa,American Samoa,,,Oceania,1988,2016
+AND,Andorra,Andorra,,,Europe,1976,2016
+ANG,Angola,Angola,,Portugese Angola,Africa,1980,2016
+ANT,Antigua and Barbuda,Antigua and Barbuda,,,Latin America,1976,2016
+ARG,Argentina,Argentina,,,Latin America,1952,2016
+ARM,Armenia,Armenia,,,Asia,1994,2016
+ARU,Aruba,Aruba,,,Latin America,1988,2016
+AUS,Australia,Australia,,,Oceania,1952,2016
+AUT,Austria,Austria,,,Europe,1952,2016
+AZE,Azerbaijan,Azerbaijan,,,Asia,1996,2016
+BAH,Bahamas,Bahamas,,,Latin America,1952,2016
+BRN,Bahrain,Bahrain,,,Asia,1984,2016
+BAN,Bangladesh,Bangladesh,,,Asia,1984,2016
+BAR,Barbados,Barbados,,,Latin America,1968,2016
+BLR,Belarus,Belarus,,,Europe,1994,2016
+BEL,Belgium,Belgium,,,Europe,1952,2016
+BIZ,Belize,Belize,,,Latin America,1968,2016
+BEN,Benin,Benin,,Dahomey,Africa,1972,2016
+BER,Bermuda,Bermuda,,,North America,1952,2016
+BHU,Bhutan,Bhutan,,,Asia,1984,2016
+BOL,Bolivia,Bolivia,,,Latin America,1956,2016
+BIH,Bosnia and Herzegovina,Bosnia and Herzegovina,,,Europe,1992,2016
+BOT,Botswana,Botswana,,Bechuanaland,Africa,1980,2016
+BRA,Brazil,Brazil,,,Latin America,1952,2016
+IVB,British Virgin Islands,British Virgin Islands,,,Latin America,1984,2016
+BRU,Brunei,Brunei,Brunei Darussalam,,Asia,1996,2016
+BUL,Bulgaria,Bulgaria,,,Europe,1952,2016
+BUR,Burkina Faso,Burkina Faso,,Upper Volta,Africa,1972,2016
+BDI,Burundi,Burundi,,,Africa,1996,2016
+CAM,Cambodia,Cambodia,,,Asia,1956,2016
+CMR,Cameroon,Cameroon,,,Africa,1964,2016
+CAN,Canada,Canada,,,North America,1952,2016
+CPV,Cape Verde,Cape Verde,Cabo Verde,Portuguese Cape Verde,Africa,1996,2016
+CAY,Cayman Islands,Cayman Islands,,,Latin America,1976,2016
+CAF,Central African Republic,Central African Republic,,Oubangui-Chari ,Africa,1968,2016
+CHA,Chad,Chad,,,Africa,1964,2016
+CHI,Chile,Chile,,,Latin America,1952,2016
+CHN,China,China,,,Asia,1952,2016
+TPE,Chinese Taipei,Taiwan,Republic of China,,Asia,1956,2016
+COL,Colombia,Colombia,,,Latin America,1956,2016
+COM,Comoros,Comoros,,French Comoros,Africa,1996,2016
+CGO,Congo (Brazzaville),Congo (Brazzaville),Republic of the Congo,,Africa,1964,2016
+COD,Congo (Kinshasa),Congo (Kinshasa),Democratic Republic of the Congo,Zaire,Africa,1968,2016
+COK,Cook Islands,Cook Islands,,,Oceania,1988,2016
+CRC,Costa Rica,Costa Rica,,,Latin America,1964,2016
+CIV,Cote d'Ivoire,Cote d'Ivoire,Ivory Coast,,Africa,1964,2016
+CRO,Croatia,Croatia,,,Europe,1992,2016
+CUB,Cuba,Cuba,,,Latin America,1952,2016
+CYP,Cyprus,Cyprus,,,Asia,1980,2016
+CZE,Czech Republic,Czech Republic (Czechia),Czechia,,Europe,1994,2016
+TCH,Czechoslovakia,Czechoslovakia,,,Europe,1952,1992
+DEN,Denmark,Denmark,,,Europe,1952,2016
+DJI,Djibouti,Djibouti,,French Territory of the Afars and the Issas,Africa,1984,2016
+DMA,Dominica,Dominica,,,Latin America,1996,2016
+DOM,Dominican Republic,Dominican Republic,,,Latin America,1964,2016
+GDR,East Germany,German Democratic Republic,,,Europe,1968,1988
+ECU,Ecuador,Ecuador,,,Latin America,1968,2016
+EGY,Egypt,Egypt,,,Africa,1952,2016
+ESA,El Salvador,El Salvador,,,Latin America,1968,2016
+GEQ,Equatorial Guinea,Equatorial Guinea,,,Africa,1984,2016
+ERI,Eritrea,Eritrea,,,Africa,2000,2016
+EST,Estonia,Estonia,,,Europe,1992,2016
+ETH,Ethiopia,Ethiopia,,,Africa,1956,2016
+FSM,Federated States of Micronesia,Micronesia,,,Oceania,2000,2016
+FIJ,Fiji,Fiji,,,Oceania,1956,2016
+FIN,Finland,Finland,,,Europe,1952,2016
+FRA,France,France,,,Europe,1952,2016
+GAB,Gabon,Gabon,,,Africa,1972,2016
+GAM,Gambia,Gambia,,,Africa,1984,2016
+GEO,Georgia,Georgia,,,Asia,1994,2016
+GER,Germany,Germany,,,Europe,1952,2016
+GHA,Ghana,Ghana,,,Africa,1952,2016
+GBR,Great Britain,United Kingdom,United Kingdom of Great Britain and Northern Ireland,,Europe,1952,2016
+GRE,Greece,Greece,,,Europe,1952,2016
+GRN,Grenada,Grenada,,,Latin America,1984,2016
+GUM,Guam,Guam,,,Oceania,1988,2016
+GUA,Guatemala,Guatemala,,,Latin America,1952,2016
+GUI,Guinea,Guinea,,French Guinea,Africa,1968,2016
+GBS,Guinea Bissau,Guinea-Bissau,,Portuguese Guinea,Africa,1996,2016
+GUY,Guyana,Guyana,,,Latin America,1952,2016
+HAI,Haiti,Haiti,,,Latin America,1960,2016
+HON,Honduras,Honduras,,,Latin America,1968,2016
+HKG,Hong Kong,Hong Kong,,,Asia,1952,2016
+HUN,Hungary,Hungary,,,Europe,1952,2016
+ISL,Iceland,Iceland,,,Europe,1952,2016
+IND,India,India,,,Asia,1952,2016
+IOA,Individual Olympic Athletes,Individual Olympic Athletes,,,none,1992,2016
+INA,Indonesia,Indonesia,,,Asia,1952,2016
+IRI,Iran,Iran,,,Asia,1952,2016
+IRQ,Iraq,Iraq,,,Asia,1960,2016
+IRL,Ireland,Ireland,,,Europe,1952,2016
+ISR,Israel,Israel,,,Asia,1952,2016
+ITA,Italy,Italy,,,Europe,1952,2016
+JAM,Jamaica,Jamaica,,,Latin America,1952,2016
+JPN,Japan,Japan,,,Asia,1952,2016
+JOR,Jordan,Jordan,,,Asia,1980,2016
+KAZ,Kazakhstan,Kazakhstan,,,Asia,1994,2016
+KEN,Kenya,Kenya,,,Africa,1956,2016
+KIR,Kiribati,Kiribati,,Gilbert Islands,Oceania,2004,2016
+KOS,Kosovo,Kosovo,,,Europe,2016,2016
+KUW,Kuwait,Kuwait,,,Asia,1968,2012
+KGZ,Kyrgyzstan,Kyrgyzstan,,,Asia,1994,2016
+LAO,Laos,Laos,,,Asia,1980,2016
+LAT,Latvia,Latvia,,,Europe,1992,2016
+LIB,Lebanon,Lebanon,,,Asia,1952,2016
+LES,Lesotho,Lesotho,,Basutoland,Africa,1972,2016
+LBR,Liberia,Liberia,,,Africa,1956,2016
+LBA,Libya,Libya,,,Africa,1968,2016
+LIE,Liechtenstein,Liechtenstein,,,Europe,1952,2016
+LTU,Lithuania,Lithuania,,,Europe,1992,2016
+LUX,Luxembourg,Luxembourg,,,Europe,1952,2016
+MKD,Macedonia,North Macedonia,,,Europe,1996,2016
+MAD,Madagascar,Madagascar,,,Africa,1964,2016
+MAW,Malawi,Malawi,,Nyasaland,Africa,1972,2016
+MAL,Malaya,Malaya,British Malaya,,Asia,1956,1960
+MAS,Malaysia,Malaysia,,,Asia,1964,2016
+MDV,Maldives,Maldives,,,Asia,1988,2016
+MLI,Mali,Mali,,French Sudan,Africa,1964,2016
+MLT,Malta,Malta,,,Europe,1960,2016
+MHL,Marshall Islands,Marshall Islands,,,Oceania,2008,2016
+MTN,Mauritania,Mauritania,,,Africa,1984,2016
+MRI,Mauritius,Mauritius,,,Africa,1984,2016
+MEX,Mexico,Mexico,,,Latin America,1952,2016
+MDA,Moldova,Moldova,,,Europe,1994,2016
+MON,Monaco,Monaco,,,Europe,1952,2016
+MGL,Mongolia,Mongolia,,,Asia,1964,2016
+MNE,Montenegro,Montenegro,,,Europe,2008,2016
+MAR,Morocco,Morocco,,,Africa,1960,2016
+MOZ,Mozambique,Mozambique,,Portuguese Mozambique,Africa,1980,2016
+MYA,Myanmar,Myanmar,,Burma,Asia,1952,2016
+n/a,n/a,Mayotte,,,Africa,n/a,n/a
+n/a,n/a,Réunion,,,Africa,n/a,n/a
+n/a,n/a,Saint Helena,,,Africa,n/a,n/a
+n/a,n/a,Macao,,,Asia,n/a,n/a
+n/a,n/a,Faroe Islands,,,Europe,n/a,n/a
+n/a,n/a,Gibraltar,,,Europe,n/a,n/a
+n/a,n/a,Holy See,,,Europe,n/a,n/a
+n/a,n/a,Isle of Man,,,Europe,n/a,n/a
+n/a,n/a,Anguilla,,,Latin America,n/a,n/a
+n/a,n/a,Caribbean Netherlands,,,Latin America,n/a,n/a
+n/a,n/a,Curaçao,Curacao,,Latin America,n/a,n/a
+n/a,n/a,Falkland Islands,,,Latin America,n/a,n/a
+n/a,n/a,French Guiana,,,Latin America,n/a,n/a
+n/a,n/a,Guadeloupe,,,Latin America,n/a,n/a
+n/a,n/a,Martinique,,,Latin America,n/a,n/a
+n/a,n/a,Montserrat,,,Latin America,n/a,n/a
+n/a,n/a,"Saint Helena, Ascension and Tristan da Cunha",,,Latin America,n/a,n/a
+n/a,n/a,Saint Martin,,,Latin America,n/a,n/a
+n/a,n/a,Sint Maarten,,,Latin America,n/a,n/a
+n/a,n/a,Turks and Caicos,,,Latin America,n/a,n/a
+n/a,n/a,Greenland,,,North America,n/a,n/a
+n/a,n/a,Saint Barthelemy,,,North America,n/a,n/a
+n/a,n/a,Saint Pierre & Miquelon,,,North America,n/a,n/a
+n/a,n/a,French Polynesia,,,Oceania,n/a,n/a
+n/a,n/a,Micronesia,,,Oceania,n/a,n/a
+n/a,n/a,New Caledonia,,,Oceania,n/a,n/a
+n/a,n/a,Niue,,,Oceania,n/a,n/a
+n/a,n/a,Northern Mariana Islands,,,Oceania,n/a,n/a
+n/a,n/a,Tokelau,,,Oceania,n/a,n/a
+n/a,n/a,Wallis & Futuna,,,Oceania,n/a,n/a
+NAM,Namibia,Namibia,,,Africa,1992,2016
+NRU,Nauru,Nauru,,,Oceania,1996,2016
+NEP,Nepal,Nepal,,,Asia,1964,2016
+NED,Netherlands,Netherlands,,,Europe,1952,2016
+AHO,Netherlands Antilles,Netherlands Antilles,,,Latin America,1952,2008
+NZL,New Zealand,New Zealand,,,Oceania,1952,2016
+NCA,Nicaragua,Nicaragua,,,Latin America,1968,2016
+NIG,Niger,Niger,,,Africa,1964,2016
+NGR,Nigeria,Nigeria,,,Africa,1952,2016
+NBO,North Borneo,North Borneo,,,Asia,1956,1956
+PRK,North Korea,North Korea,,,Asia,1964,2016
+YAR,North Yemen,North Yemen,,,Asia,1984,1988
+NOR,Norway,Norway,,,Europe,1952,2016
+OMA,Oman,Oman,,,Asia,1984,2016
+PAK,Pakistan,Pakistan,,,Asia,1952,2016
+PLW,Palau,Palau,,,Oceania,2000,2016
+PLE,Palestine,State of Palestine,,,Asia,1996,2016
+PAN,Panama,Panama,,,Latin America,1952,2016
+PNG,Papua New Guinea,Papua New Guinea,,,Oceania,1976,2016
+PAR,Paraguay,Paraguay,,,Latin America,1968,2016
+PER,Peru,Peru,,,Latin America,1956,2016
+PHI,Philippines,Philippines,The Philippines,,Asia,1952,2016
+POL,Poland,Poland,,,Europe,1952,2016
+POR,Portugal,Portugal,,,Europe,1952,2016
+PUR,Puerto Rico,Puerto Rico,,,Latin America,1952,2016
+QAT,Qatar,Qatar,,,Asia,1984,2016
+ROT,Refugee Olympic Athletes,Refugee Olympic Athletes,,,none,2016,2016
+RHO,Rhodesia,Rhodesia,Zimbabwe,,Africa,1960,1960
+ROU,Romania,Romania,,,Europe,1952,2016
+RUS,Russia,Russia,,,Europe,1994,2016
+RWA,Rwanda,Rwanda,,,Africa,1984,2016
+SAA,Saar,Saar,Saar Protectorate,,Europe,1952,1952
+SKN,Saint Kitts and Nevis,Saint Kitts & Nevis,,,Latin America,1996,2016
+LCA,Saint Lucia,Saint Lucia,,,Latin America,1996,2016
+VIN,Saint Vincent and the Grenadines,St. Vincent & Grenadines,,,Latin America,1988,2016
+SAM,Samoa,Samoa,,,Oceania,1984,2016
+SMR,San Marino,San Marino,,,Europe,1960,2016
+STP,Sao Tome and Principe,Sao Tome & Principe,,Portuguese Sao Tome and Principe,Africa,1996,2016
+KSA,Saudi Arabia,Saudi Arabia,,,Asia,1972,2016
+SEN,Senegal,Senegal,,,Africa,1964,2016
+SRB,Serbia,Serbia,,,Europe,2008,2016
+SCG,Serbia and Montenegro,Serbia and Montenegro,,,Europe,1996,2006
+SEY,Seychelles,Seychelles,Crown Colony of the Seychelles,,Africa,1980,2016
+SLE,Sierra Leone,Sierra Leone,,,Africa,1968,2016
+SGP,Singapore,Singapore,,,Asia,1952,2016
+SVK,Slovakia,Slovakia,,,Europe,1994,2016
+SLO,Slovenia,Slovenia,,,Europe,1992,2016
+SOL,Solomon Islands,Solomon Islands,British Solomon Islands,,Oceania,1984,2016
+SOM,Somalia,Somalia,,,Africa,1972,2016
+RSA,South Africa,South Africa,,,Africa,1952,2016
+KOR,South Korea,South Korea,,,Asia,1952,2016
+SSD,South Sudan,South Sudan,,,Africa,2016,2016
+VNM,South Vietnam,South Vietnam,,,Asia,1952,1972
+YMD,South Yemen,South Yemen,,,Asia,1988,1988
+URS,Soviet Union,Soviet Union,,,Europe,1952,1988
+ESP,Spain,Spain,,,Europe,1952,2016
+SRI,Sri Lanka,Sri Lanka,,,Asia,1952,2016
+SUD,Sudan,Sudan,,,Africa,1960,2016
+SUR,Suriname,Suriname,,,Latin America,1968,2016
+SWZ,Swaziland,Swaziland,Eswatini,,Africa,1972,2016
+SWE,Sweden,Sweden,,,Europe,1952,2016
+SUI,Switzerland,Switzerland,,,Europe,1952,2016
+SYR,Syria,Syria,,,Asia,1968,2016
+TJK,Tajikistan,Tajikistan,,,Asia,1996,2016
+TAN,Tanzania,Tanzania,,,Africa,1964,2016
+THA,Thailand,Thailand,,,Asia,1952,2016
+TLS,Timor Leste,Timor-Leste,East Timor,,Asia,2004,2016
+TOG,Togo,Togo,,,Africa,1972,2016
+TGA,Tonga,Tonga,,,Oceania,1984,2016
+TTO,Trinidad and Tobago,Trinidad and Tobago,,,Latin America,1952,2016
+TUN,Tunisia,Tunisia,,,Africa,1960,2016
+TUR,Turkey,Turkey,Turkiye,,Asia,1952,2016
+TKM,Turkmenistan,Turkmenistan,,,Asia,1996,2016
+TUV,Tuvalu,Tuvalu,Ellice Islands,,Oceania,2008,2016
+UGA,Uganda,Uganda,,,Africa,1956,2016
+UKR,Ukraine,Ukraine,,,Europe,1994,2016
+EUN,Unified Team,Unified Team,,,Europe,1992,1992
+UAE,United Arab Emirates,United Arab Emirates,,,Asia,1984,2016
+UAR,United Arab Republic,United Arab Republic,,,Asia,1960,1960
+USA,United States,United States,United States of America,,North America,1952,2016
+ISV,United States Virgin Islands,U.S. Virgin Islands,,,Latin America,1968,2016
+URU,Uruguay,Uruguay,,,Latin America,1952,2016
+UZB,Uzbekistan,Uzbekistan,,,Asia,1994,2016
+VAN,Vanuatu,Vanuatu,New Hebrides,,Oceania,1988,2016
+VEN,Venezuela,Venezuela,,,Latin America,1952,2016
+VIE,Vietnam,Vietnam,,,Asia,1980,2016
+FRG,West Germany,Federal Republic of Germany,,,Europe,1968,1988
+WIF,West Indies Federation,West Indies Federation,,,Latin America,1960,1960
+n/a,Western Sahara,Western Sahara,Spanish Sahara,,Africa,n/a,n/a
+YEM,Yemen,Yemen,,,Asia,1992,2016
+YUG,Yugoslavia,Yugoslavia,,,Europe,1952,1992
+ZAM,Zambia,Zambia,,Northern Rhodesia,Africa,1964,2016
+ZIM,Zimbabwe,Zimbabwe,,Rhodesia,Africa,1960,2016

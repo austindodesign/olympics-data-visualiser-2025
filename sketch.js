@@ -41,10 +41,10 @@ const TIER_W2_MEDAL = "#00e2de";
 const TIER_W3_MEDAL = "#00dd81";
 const TIER_W4_MEDAL = "#80d237";
 const SCREEN_BG = "#E5E5E5";
-const BUTTON_UNSELECTED = "#969696";
-const BUTTON_SELECTED = "#000000";
+const BUTTON_UNSELECTED = "#B4B4B4";
+const BUTTON_SELECTED = "#B4B4B4";
 const BUTTON_HOVER = "#FF555F";
-const LABEL_AND_LINE = "#5A5A5A";
+const LABEL_AND_LINE = "#B4B4B4";
 const SLIDER_ANCHOR = "#FF555F";
 const TEXT_COLOUR = "#000000";
 
@@ -123,10 +123,6 @@ function setup() {
   loadWorldPop();
   loadOlympicParticipation();
   loadOlympicsData();
-
-  console.log("countries loaded:", Object.keys(countryMap).length);
-
-
   buildYearSeasonList();
   computeSliderPositions();
   if (yearSeasonList.length > 0) {
@@ -160,15 +156,18 @@ function draw() {
   drawAxes();
 
   let resetHover = isMouseOver(RESET_BTN_X, RESET_BTN_Y, RESET_BTN_W, RESET_BTN_H);
+  noStroke();
   fill(resetHover ? BUTTON_HOVER : BUTTON_SELECTED);
   rect(RESET_BTN_X, RESET_BTN_Y, RESET_BTN_W, RESET_BTN_H);
-  fill(255);
+  noStroke();
+  fill(TEXT_COLOUR);
   textAlign(CENTER, CENTER);
-  textFont(urbanistMedium, 14);
+  textFont(urbanistMedium, 12);
   text("RESET VIEW", RESET_BTN_X + RESET_BTN_W / 2, RESET_BTN_Y + RESET_BTN_H / 2);
 
 
   textFont(oswaldBold, 30);
+  noStroke();
   fill(TEXT_COLOUR);
   textAlign(RIGHT, TOP);
   text("OLYMPIC GAMES STATS VISUALISER", CHART_RIGHT, CHART_TOP - 52);
@@ -204,44 +203,60 @@ function drawSlider() {
     if (x < SLIDER_X - TICK_SPACING || x > SLIDER_X + SLIDER_WIDTH + TICK_SPACING) continue;
     stroke(LABEL_AND_LINE);
     line(x, SLIDER_Y - 5, x, SLIDER_Y + 5);
+    noStroke;
     fill(TEXT_COLOUR);
     textAlign(CENTER, BOTTOM);
-    textFont(i === alignedIndex ? urbanistBlack : urbanistMedium, 14);
+    textFont(i === alignedIndex ? urbanistBold : urbanistMedium, 14);
     text(ys.label(), x, SLIDER_Y - 8);
   }
 }
 
 function drawDropdowns() {
   X_DROPDOWN_X = (CHART_LEFT + CHART_RIGHT) / 2 - DROPDOWN_W / 2;
+
+  // X-axis main dropdown button
   let xHover = isMouseOver(X_DROPDOWN_X, X_DROPDOWN_Y, DROPDOWN_W, DROPDOWN_H);
+  noStroke();  // disable outline
   fill(xHover || xDropdownOpen ? BUTTON_HOVER : BUTTON_SELECTED);
   rect(X_DROPDOWN_X, X_DROPDOWN_Y, DROPDOWN_W, DROPDOWN_H);
-  textFont(urbanistMedium, 16);
-  fill(xDropdownOpen ? TEXT_COLOUR : 255);
+
+  noStroke();
+  textFont(urbanistMedium, 12);
+  fill(TEXT_COLOUR);
   textAlign(CENTER, CENTER);
   text(selectedX.toUpperCase(), X_DROPDOWN_X + DROPDOWN_W / 2, X_DROPDOWN_Y + DROPDOWN_H / 2);
+
+  // Dropdown options
   if (xDropdownOpen) {
     for (let i = 0; i < axisOptions.length; i++) {
       let val = axisOptions[i];
       if (val === "Total Medals") continue;
+
       let itemY = X_DROPDOWN_Y + DROPDOWN_H + i * dropdownItemHeight;
-      let isHover = mouseX >= X_DROPDOWN_X && mouseX <= X_DROPDOWN_X + DROPDOWN_W &&
-                    mouseY >= itemY && mouseY <= itemY + dropdownItemHeight;
+      let isHover = isMouseOver(X_DROPDOWN_X, itemY, DROPDOWN_W, dropdownItemHeight);
+
+      noStroke();
       fill(isHover ? BUTTON_HOVER : BUTTON_UNSELECTED);
       rect(X_DROPDOWN_X, itemY, DROPDOWN_W, dropdownItemHeight);
+
+      noStroke();
       fill(TEXT_COLOUR);
       text(val.toUpperCase(), X_DROPDOWN_X + DROPDOWN_W / 2, itemY + dropdownItemHeight / 2);
     }
   }
+
+  // Y-axis label (static, rotated)
+  noStroke();
   fill(TEXT_COLOUR);
   textAlign(CENTER, CENTER);
-  textFont(urbanistMedium, 16);
+  textFont(urbanistMedium, 12);
   push();
   translate(CHART_LEFT - 15, (CHART_TOP + CHART_BOTTOM) / 2);
   rotate(-HALF_PI);
   text("TOTAL MEDALS", 0, 0);
   pop();
 }
+
 
 function handleDropdownClicks() {
   if (isMouseOver(X_DROPDOWN_X, X_DROPDOWN_Y, DROPDOWN_W, DROPDOWN_H)) {

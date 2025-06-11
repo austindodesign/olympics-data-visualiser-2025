@@ -204,7 +204,7 @@ function drawSlider() {
     line(x, SLIDER_Y - 5, x, SLIDER_Y + 5);
     fill(TEXT_COLOUR);
     textAlign(CENTER, BOTTOM);
-    textFont(i === alignedIndex ? urbanistBlack : urbanistMedium, 14);
+    textFont(i === alignedIndex ? urbanistBold : urbanistLight, 14);
     text(ys.label(), x, SLIDER_Y - 8);
   }
 }
@@ -214,7 +214,7 @@ function drawDropdowns() {
   let xHover = isMouseOver(X_DROPDOWN_X, X_DROPDOWN_Y, DROPDOWN_W, DROPDOWN_H);
   fill(xHover || xDropdownOpen ? BUTTON_HOVER : BUTTON_SELECTED);
   rect(X_DROPDOWN_X, X_DROPDOWN_Y, DROPDOWN_W, DROPDOWN_H);
-  textFont(urbanistMedium, 16);
+  textFont(urbanistLight, 16);
   fill(xDropdownOpen ? TEXT_COLOUR : 255);
   textAlign(CENTER, CENTER);
   text(selectedX.toUpperCase(), X_DROPDOWN_X + DROPDOWN_W / 2, X_DROPDOWN_Y + DROPDOWN_H / 2);
@@ -233,7 +233,7 @@ function drawDropdowns() {
   }
   fill(TEXT_COLOUR);
   textAlign(CENTER, CENTER);
-  textFont(urbanistMedium, 16);
+  textFont(urbanistLight, 16);
   push();
   translate(CHART_LEFT - 15, (CHART_TOP + CHART_BOTTOM) / 2);
   rotate(-HALF_PI);

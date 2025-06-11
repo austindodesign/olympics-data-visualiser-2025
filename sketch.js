@@ -9,22 +9,23 @@ const SKETCH_W = 1280;
 const SKETCH_H = 720;
 const CHART_LEFT = 80;
 const CHART_RIGHT = 1200;
-const CHART_TOP = 80;
-const CHART_BOTTOM = 580;
+const CHART_TOP = 100;
+const CHART_BOTTOM = 600;
 const CHART_W = CHART_RIGHT - CHART_LEFT;
 const CHART_H = CHART_BOTTOM - CHART_TOP;
 const PANEL_W = Math.floor(SKETCH_W * 0.30);
 const PANEL_H = SKETCH_H;
 const DROPDOWN_W = 160;
-const DROPDOWN_H = 20;
+const DROPDOWN_H = 30;
 const NUM_VISIBLE_TICKS = 10;
 const TICK_SPACING = 80;
 const SLIDER_WIDTH = NUM_VISIBLE_TICKS * TICK_SPACING;
 const SLIDER_X = (SKETCH_W - SLIDER_WIDTH) / 2;
 const SLIDER_Y = CHART_BOTTOM + 80;
-const RESET_BTN_W = 150;
+const RESET_BTN_W = 100;
 const RESET_BTN_H = 30;
-const RESET_BTN_Y = 80;
+const RESET_BTN_Y =100;
+const RESET_BTN_X = SKETCH_W - RESET_BTN_W - 80;
 const CHART_MARGIN_RATIO = 0.05;
 const EASE = 0.1;
 
@@ -48,7 +49,6 @@ const SLIDER_ANCHOR = "#FF555F";
 const TEXT_COLOUR = "#000000";
 
 // Globals
-let RESET_BTN_X;
 let selectedX = "Athlete Count";
 let selectedY = "Total Medals";
 let axisOptions = ["Athlete Count", "Population", "Land Area"];
@@ -104,7 +104,7 @@ function preload() {
   aliasTable = loadTable("sources/country_code_alias.csv", "header");
   statsTable = loadTable("sources/country_stats_2023.csv", "header");
   popTable = loadTable("sources/worldpop.csv", "header");
-  olympicsTablePart1 = loadTable("sources/olympic_1952-1984.csv", "header");
+olympicsTablePart1 = loadTable("sources/olympic_1952-1984.csv", "header");
 olympicsTablePart2 = loadTable("sources/olympic_1985-2016.csv", "header");
 
 }
@@ -114,7 +114,6 @@ function setup() {
   createCanvas(SKETCH_W, SKETCH_H);
   textAlign(LEFT, CENTER);
   smooth();
-  RESET_BTN_X = SKETCH_W - RESET_BTN_W - 20;
   currentOffset = createVector(0, 0);
   targetOffset = createVector(0, 0);
   currentPan = createVector(0, 0);
@@ -150,7 +149,6 @@ function draw() {
   currentPan.y = lerp(currentPan.y, targetPan.y, EASE);
   drawSlider();
   drawDropdowns();
-  drawAxes();
   push();
   drawingContext.save();
   drawingContext.beginPath();
@@ -159,17 +157,21 @@ function draw() {
   drawAllCountryCircles();
   drawingContext.restore();
   pop();
+  drawAxes();
+
   let resetHover = isMouseOver(RESET_BTN_X, RESET_BTN_Y, RESET_BTN_W, RESET_BTN_H);
   fill(resetHover ? BUTTON_HOVER : BUTTON_SELECTED);
   rect(RESET_BTN_X, RESET_BTN_Y, RESET_BTN_W, RESET_BTN_H);
   fill(255);
   textAlign(CENTER, CENTER);
   textFont(urbanistMedium, 14);
-  text("RESET VIEW", RESET_BTN_X + RESET_BTN_W / 2 - 28, RESET_BTN_Y + RESET_BTN_H / 2);
+  text("RESET VIEW", RESET_BTN_X + RESET_BTN_W / 2, RESET_BTN_Y + RESET_BTN_H / 2);
+
+
   textFont(oswaldBold, 30);
   fill(TEXT_COLOUR);
   textAlign(RIGHT, TOP);
-  text("OLYMPIC GAMES STATS VISUALISER", CHART_RIGHT, CHART_TOP - 32);
+  text("OLYMPIC GAMES STATS VISUALISER", CHART_RIGHT, CHART_TOP - 52);
 }
 
 function resetView() {
@@ -204,7 +206,7 @@ function drawSlider() {
     line(x, SLIDER_Y - 5, x, SLIDER_Y + 5);
     fill(TEXT_COLOUR);
     textAlign(CENTER, BOTTOM);
-    textFont(i === alignedIndex ? urbanistBold : urbanistLight, 14);
+    textFont(i === alignedIndex ? urbanistBlack : urbanistMedium, 14);
     text(ys.label(), x, SLIDER_Y - 8);
   }
 }
@@ -214,7 +216,7 @@ function drawDropdowns() {
   let xHover = isMouseOver(X_DROPDOWN_X, X_DROPDOWN_Y, DROPDOWN_W, DROPDOWN_H);
   fill(xHover || xDropdownOpen ? BUTTON_HOVER : BUTTON_SELECTED);
   rect(X_DROPDOWN_X, X_DROPDOWN_Y, DROPDOWN_W, DROPDOWN_H);
-  textFont(urbanistLight, 16);
+  textFont(urbanistMedium, 16);
   fill(xDropdownOpen ? TEXT_COLOUR : 255);
   textAlign(CENTER, CENTER);
   text(selectedX.toUpperCase(), X_DROPDOWN_X + DROPDOWN_W / 2, X_DROPDOWN_Y + DROPDOWN_H / 2);
@@ -233,7 +235,7 @@ function drawDropdowns() {
   }
   fill(TEXT_COLOUR);
   textAlign(CENTER, CENTER);
-  textFont(urbanistLight, 16);
+  textFont(urbanistMedium, 16);
   push();
   translate(CHART_LEFT - 15, (CHART_TOP + CHART_BOTTOM) / 2);
   rotate(-HALF_PI);
@@ -334,7 +336,7 @@ function mouseReleased() {
       let maxDataX = getMaxValueForYearSeason(selectedX, currentYearSeason);
       let maxDataY = getMaxValueForYearSeason(selectedY, currentYearSeason);
       let marginX = maxDataX * CHART_MARGIN_RATIO;
-      let marginY = maxDataY * CHART_MARGIN_RATIO + 10;
+      let marginY = maxDataY * CHART_MARGIN_RATIO;
       let dataX = cd.getValue(selectedX, currentYearSeason);
       let dataY = cd.getValue(selectedY, currentYearSeason);
       let screenCX = (CHART_LEFT + CHART_RIGHT) / 2;
